@@ -1,0 +1,39 @@
+<ion-side-menus>
+    <ion-side-menu-content>
+
+        <ion-nav-bar class="bar-positive" align-title="left">
+            <ion-nav-back-button>
+                <a class="button button-icon icon ion-arrow-left-c"></a>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <a class="button button-icon icon ion-navicon" menu-toggle="left"></a>
+            </ion-nav-buttons>
+
+        </ion-nav-bar>
+
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+
+    </ion-side-menu-content>
+    <ion-side-menu side="left" width="290">
+
+        <ion-content>
+
+            <div class="list">
+
+                <div class="item item-divider">
+                    Menu
+                </div>
+
+                <a class="item item-icon-left" ui-sref="home" menu-close>
+                    <i class="ion-ios-home-outline"></i> Home
+                </a>
+                <a class="item item-icon-left" ui-sref="tareas" menu-close>
+                    <i class="ion-android-checkbox-outline"></i> Tareas
+                </a>
+
+            </div>
+        </ion-content>
+
+    </ion-side-menu>
+</ion-side-menus>

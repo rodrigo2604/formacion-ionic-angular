@@ -251,13 +251,13 @@
                 </tr>
                 <tr>
                   <td>Warnings</td>
-                  <td>0</td>
+                  <td>1</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td>Total alerts</td>
-                  <td>0</td>
+                  <td>1</td>
                 </tr>
               </tfoot>
           </table>
@@ -271,23 +271,44 @@
                 </tr>
                 <tr>
                   <td>Files with only warnings</td>
-                  <td>0</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>Clean files</td>
-                  <td>24</td>
+                  <td>95</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td>Total files linted</td>
-                  <td>24</td>
+                  <td>96</td>
                 </tr>
               </tfoot>
           </table>
         </div>
       </div>
 
+        <h2>Most-Common Errors and Warnings</h2>
+        
+        <div class="table-wrapper occurances">
+          <div class="table-column">
+            <h3>Errors</h3>
+        
+              <p>No errors were found!</p>
+          </div>
+          <div class="table-column">
+            <h3>Warnings</h3>
+        
+              <table class="summary-table">
+                <tbody>
+                    <tr class="occurance row-0">
+                        <td><a href="http://eslint.org/docs/rules/no-unused-vars">no-unused-vars</a></td>
+                      <td>1</td>
+                    </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
 
       <h2>File Breakdown
           <a id="toggle" href="javascript:;" onclick="toggleAllDetails(this)" class="toggle-all-link">(expand all)</a></h2>
@@ -300,53 +321,209 @@
             <th class="warning-col">Warnings</th>
           </tr>
         </thead>
-        <tbody><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/compile.js</td>
+        <tbody><tr class="warning"><td>            <a class="toggle-link" href="javascript:;" onclick="toggleDetails(this)">C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.controller.js</a></td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/copy.js</td>
+              <td>1</td></tr><tr class="details-row hidden">
+                <td colspan="3">
+                  <table class="details-table">
+                    <tbody><tr class="msg-warning"><td class="location-col">
+                              1:48
+                          </td>
+                          <td class="severity-col">Warning</td>
+                          <td class="message-col">&#x27;$log&#x27; is defined but never used.</td>
+                            <td class="rule-col"><a href="http://eslint.org/docs/rules/no-unused-vars">no-unused-vars</a></td>
+      </tr></tbody>
+                  </table>
+                </td>
+              </tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\compile.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/default.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\compile.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/eslint.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\compile.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/libs.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\compile.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/minimage.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\copy.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/sass.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\copy.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/templates.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\copy.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/gulp-tasks/watch.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\copy.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/app/app.config.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\default.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/app/app.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\default.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/app/app.route.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\default.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/core/components/card/card.component.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\default.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/core/components/card/card.controller.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\eslint.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/core/components/card/card.module.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\eslint.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/core/components/components.module.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\eslint.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/core/core.module.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\eslint.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/features/features.module.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\libs.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/features/home/home.controller.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\libs.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/features/home/home.module.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\libs.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/features/home/home.route.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\libs.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/features/tareas/tareas.controller.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\minimage.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/features/tareas/tareas.module.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\minimage.js</td>
               <td>0</td>
-              <td>0</td></tr><tr class="success"><td>/home/curso/apps/formacion-ionic-angular/src/features/tareas/tareas.route.js</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\minimage.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\minimage.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\sass.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\sass.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\sass.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\sass.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\templates.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\templates.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\templates.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\templates.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\watch.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\watch.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\watch.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\gulp-tasks\watch.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.config.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.config.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.config.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.config.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\app\app.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.component.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.component.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.component.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.component.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\card\card.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\components.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\components.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\components.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\components\components.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\core.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\core.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\core.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\core\core.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\features.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\features.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\features.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\features.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\home\home.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.controller.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.module.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.route.js</td>
+              <td>0</td>
+              <td>0</td></tr><tr class="success"><td>C:\Users\rodrigo.llanos\Documents\formacion-ionic-angular\src\features\tareas\tareas.route.js</td>
               <td>0</td>
               <td>0</td></tr></tbody>
       </table>
