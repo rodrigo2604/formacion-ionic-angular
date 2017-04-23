@@ -1,0 +1,12 @@
+{
+  "name": "formacion-angular-ionic",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "watch",
+    "default"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
