@@ -1,6 +1,6 @@
 export default function routeConfig($urlRouterProvider, $stateProvider) {
 	'ngInject'
-    $urlRouterProvider.otherwise('/formacion/home');
+    $urlRouterProvider.otherwise('/login');
 
     $stateProvider
         .state('formacion', {
@@ -8,6 +8,5 @@ export default function routeConfig($urlRouterProvider, $stateProvider) {
             cache: false,
             url: '/formacion',
             templateUrl: "src/app/app.template.html"
-        })
-
+        });
 }
