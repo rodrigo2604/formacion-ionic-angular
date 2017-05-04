@@ -2,3 +2,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "./lib/ionic/scss/ionic";
+
+// Incluye estilos de las features
+
+@import 'src/features/login/login.style';

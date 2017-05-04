@@ -10,6 +10,6 @@ export default function HomeConfig($stateProvider) {
                     templateUrl: "src/features/home/home.template.html",
                     controller: 'HomeController as vm'
                 }
-            },
+            }
         })
 }

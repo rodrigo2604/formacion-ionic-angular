@@ -1,7 +1,6 @@
-<h1>hola</h1>
 <ion-view view-title="Login">
-    <ion-content padding="true">
-        <form ng-submit="vm.login()">
+    <ion-content>
+        <form ng-submit="vm.login()" class="login-form">
 
             <div class="list">
                 <label class="item item-input">
@@ -11,6 +10,7 @@
                     <input type="password" placeholder="Password" ng-model="vm.password">
                 </label>
             </div>
+            <ion-checkbox ng-model="vm.isChecked">Recordar</ion-checkbox>
             <button type="submit" class="button button-block button-positive">
             Login
             </button>
