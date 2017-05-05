@@ -7,12 +7,13 @@
     </ion-nav-buttons>
 
     <ion-content padding="true">
+
+        <ion-refresher pulling-text="Pull to refresh..." pulling-icon="ion-ios-arrow-thin-down" on-refresh="vm.doRefresh()">
+        </ion-refresher>
+
         <div ng-repeat="announce in vm.announces">
             <card announce="announce" on-update="vm.changeText($event)"></card>
         </div>
 
-        <button class="button button-small button-positive" ng-click="vm.goTareas()">
-            Tareas
-        </button>
     </ion-content>
 </ion-view>

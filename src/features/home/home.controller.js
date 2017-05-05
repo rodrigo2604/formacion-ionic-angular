@@ -1,4 +1,4 @@
-export default function HomeController($state, StorageService, HomeService) {
+export default function HomeController($scope, $state, StorageService, HomeService) {
     'ngInject';
 
     var vm = this;
@@ -6,6 +6,7 @@ export default function HomeController($state, StorageService, HomeService) {
     vm.logout = _logout;
     vm.goTareas = _goTareas;
     vm.changeText = _changeText;
+    vm.doRefresh = _doRefresh;
 
     init();
 
@@ -26,6 +27,12 @@ export default function HomeController($state, StorageService, HomeService) {
 
     function _changeText(event) {
         vm.text = `${event.salute} ---> ${event.text}`;
+    }
+
+    function _doRefresh() {
+        HomeService.getAnnounces()
+            .then(announces => vm.announces = announces)
+            .finally(() => $scope.$broadcast('scroll.refreshComplete'));
     }
 
 }
