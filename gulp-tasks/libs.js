@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 module.exports = function () {
     var _src = [
         './lib/ionic/js/ionic.bundle.min.js',
-        './lib/moment/min/moment.min.js',
+        './lib/moment/min/moment-with-locales.min.js',
     ];
 
     return gulp.src(_src)

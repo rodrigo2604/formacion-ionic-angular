@@ -1,4 +1,4 @@
-export default function ($ionicConfigProvider, $logProvider) {
+export default function ($ionicConfigProvider, $logProvider, $httpProvider) {
     'ngInject';
 
     $ionicConfigProvider.backButton.previousTitleText(false);
@@ -6,4 +6,6 @@ export default function ($ionicConfigProvider, $logProvider) {
     $ionicConfigProvider.backButton.text('');
 
     $logProvider.debugEnabled(true);
+
+    $httpProvider.interceptors.push('auth');
 }

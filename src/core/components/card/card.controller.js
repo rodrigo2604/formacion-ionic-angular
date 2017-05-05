@@ -15,6 +15,14 @@ class Card {
     $onDestroy() {
         this.$log.log('Se destruye componente card');
     }
+
+    update(){
+        this.onUpdate({
+            $event: {
+                text: this.text
+            }
+        });
+    }
 }
 
 export default Card;

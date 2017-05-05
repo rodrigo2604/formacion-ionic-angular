@@ -1,5 +1,6 @@
 import route from './home.route';
 import Controller from './home.controller';
+import Service from './home.service';
 
 export default angular
     .module('formacion.home',
@@ -8,4 +9,5 @@ export default angular
     ])
     .config(route)
     .controller('HomeController', Controller)
+    .service('HomeService', Service)
     .name;

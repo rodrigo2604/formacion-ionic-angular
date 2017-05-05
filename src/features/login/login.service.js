@@ -1,4 +1,4 @@
-export default function LoginService($http, $q, SessionService) {
+export default function LoginService($http, $q, SessionService, CONSTANTS) {
     'ngInject';
     return {
         login: _login
@@ -8,7 +8,7 @@ export default function LoginService($http, $q, SessionService) {
         var deferred = $q.defer();
         $http({
             method: 'POST',
-            url: 'https://net-tune.herokuapp.com/auth/login',
+            url: `${CONSTANTS.API_URL}/auth/login`,
             data: {
                 username: username,
                 password: password

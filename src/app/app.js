@@ -1,6 +1,7 @@
 // ionic starter App
 import config from './app.config';
 import route from './app.route';
+import constants from './app.constants';
 
 
 import '../core/core.module';
@@ -13,6 +14,7 @@ angular.module('formacion', [
 ])
   .config(route)
   .config(config)
+  .constant('CONSTANTS', constants)
   .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
       if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {

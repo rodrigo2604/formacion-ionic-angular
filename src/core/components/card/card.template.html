@@ -1,5 +1,20 @@
-<div class="card">
-  <div class="item item-text-wrap">
-    <input type="text" ng-model="$ctrl.text">
+<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="mcfly.jpg">
+    <h2>{{$ctrl.announce.title}}</h2>
+    <p>{{$ctrl.announce.createDate | momentFormat}}</p>
   </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="delorean.jpg">
+    <p>
+      {{$ctrl.announce.text}}
+    </p>
+    <p>
+      <a href="" class="subdued">{{$ctrl.announce.likes}} Likes</a>
+      <a href="" class="subdued">{{$ctrl.announce.views}} Views</a>
+    </p>
+  </div>
+
 </div>
