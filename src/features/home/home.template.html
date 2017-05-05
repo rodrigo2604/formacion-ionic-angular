@@ -1,7 +1,14 @@
 <ion-view view-title="Home">
+
+    <ion-nav-buttons side="right">
+        <button class="button button-small button-clear button-light" ng-click="vm.logout()">
+            Hola {{vm.username}} <i class="icon ion-log-out"></i>
+        </button>
+    </ion-nav-buttons>
+
     <ion-content padding="true">
-        <h5>Hola {{vm.name}}, estás en la home</h5>
-        <card text="vm.text"></card>
+        <span>{{vm.text}}</span>
+        <card text="vm.text" on-update="vm."></card>
 
         <button class="button button-small button-positive" ng-click="vm.goTareas()">
             Tareas
