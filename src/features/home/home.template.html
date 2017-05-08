@@ -6,14 +6,45 @@
         </button>
     </ion-nav-buttons>
 
-    <ion-content padding="true">
+    <ion-tabs class="tabs-positive tabs-icon-top">
 
-        <ion-refresher pulling-text="Pull to refresh..." pulling-icon="ion-ios-arrow-thin-down" on-refresh="vm.doRefresh()">
-        </ion-refresher>
+        <ion-tab title="Anuncios" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
+            <ion-view>
 
-        <div ng-repeat="announce in vm.announces">
-            <card announce="announce" on-update="vm.changeText($event)"></card>
-        </div>
+                <ion-content padding="true">
 
-    </ion-content>
+                    <ion-refresher pulling-text="Pull to refresh..." pulling-icon="ion-ios-arrow-thin-down" on-refresh="vm.doRefresh()">
+                    </ion-refresher>
+
+                    <div ng-repeat="announce in vm.announces">
+                        <card announce="announce" on-update="vm.changeText($event)"></card>
+                    </div>
+
+                    <ion-infinite-scroll ng-if="vm.moreData" on-infinite="vm.loadMore()" distance="1%">
+                    </ion-infinite-scroll>
+
+                </ion-content>
+
+            </ion-view>
+        </ion-tab>
+
+        <ion-tab title="Mis anuncios" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+            <ion-view>
+
+                <ion-content padding="true">
+
+                    <ion-refresher pulling-text="Pull to refresh..." pulling-icon="ion-ios-arrow-thin-down" on-refresh="vm.doRefresh()">
+                    </ion-refresher>
+
+                    <div ng-repeat="announce in vm.myAnnounces">
+                        <card announce="announce" on-update="vm.changeText($event)"></card>
+                    </div>
+
+                </ion-content>
+
+            </ion-view>
+        </ion-tab>
+
+    </ion-tabs>
+
 </ion-view>
