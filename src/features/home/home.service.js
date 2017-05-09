@@ -9,15 +9,13 @@ export default function HomeService($log, $http, StorageService, CONSTANTS) {
 
     function _getAnnounces(skip) {
         return $http.get(`${CONSTANTS.API_URL}/private/announces?skip=${skip}&limit=5`)
-            .then(res => res.data)
-            .catch(err => $log.error(err))
+            .then(res => res.data);
     }
 
     function _getMyAnnounces() {
         let idUser = StorageService.get('userProfile')._id;
         return $http.get(`${CONSTANTS.API_URL}/private/announces?owner=${idUser}`)
-            .then(res => res.data)
-            .catch(err => $log.error(err))
+            .then(res => res.data);
     }
 
     function _like() {

@@ -8,4 +8,5 @@ export default function ($ionicConfigProvider, $logProvider, $httpProvider) {
     $logProvider.debugEnabled(true);
 
     $httpProvider.interceptors.push('auth');
+    $httpProvider.interceptors.push('resErrors');
 }
