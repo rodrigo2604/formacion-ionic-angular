@@ -1,0 +1,16 @@
+<ion-view view-title="Perfil">
+
+    <ion-content padding="true">
+        <h4>Hola {{vm.userProfile.username}}. Desde aquí puedes modificar tu perfil </h4>
+
+        <button class="button button-large button-positive" ng-click="vm.addPhoto()">
+            <i class="icon ion-camera"></i>
+        </button>
+
+        <div class="item item-avatar">
+            <img ng-src="{{vm.userImage}}">
+        </div>
+
+    </ion-content>
+
+</ion-view>
